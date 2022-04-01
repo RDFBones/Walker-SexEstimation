@@ -1,0 +1,696 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/rdfbones/ext/walker#"
+     xml:base="http://w3id.org/rdfbones/ext/walker"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fma="http://purl.org/sig/ont/fma/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:resource="http://semanticscience.org/resource/">
+    <owl:Ontology rdf:about="http://w3id.org/rdfbones/ext/walker">
+        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/standards-si"/>
+        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/phaleron-si/phaleron-si.owl"/>
+        <owl:imports rdf:resource="http://w3id.org/rdfbones/ontology_resources/core/v0-2/rdfbones.owl"/>
+        <terms:creator>Lukas Bender</terms:creator>
+        <terms:title>Walker&apos;s Sex Estimation ontology</terms:title>
+        <rdfs:label>Walker&apos;s Sex Estimation ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/ClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/ClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000070"/>
+        <rdfs:label>Walker&apos;s morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/ClassificationProcess"/>
+        <rdfs:label>Walker&apos;s glabella morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaMorphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphology">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/Morphology"/>
+        <rdfs:label>Walker&apos;s glabella assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyLabel"/>
+        <rdfs:label>Walker&apos;s glabella assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore"/>
+        <rdfs:label>Numeric value of Walker&apos;s glabella assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyScalarTransform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyScalarTransform"/>
+        <rdfs:label>Walker&apos;s glabella assigned morphology scalar transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Walker&apos;s glabella assigned morphology value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/ClassificationProcess"/>
+        <rdfs:label>Walker&apos;s mastoid process morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphology">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/Morphology"/>
+        <rdfs:label>Walker&apos;s mastoid process assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyLabel"/>
+        <rdfs:label>Walker&apos;s mastoid process assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore"/>
+        <rdfs:label>Numeric value of Walker&apos;s mastoid process assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyScalarTransform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyScalarTransform"/>
+        <rdfs:label>Walker&apos;s mastoid process assigned morphology scalar transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Walker&apos;s mastoid process assigned morphology value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MentumClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/ClassificationProcess"/>
+        <rdfs:label>Walker&apos;s mentum morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumMorphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphology">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/Morphology"/>
+        <rdfs:label>Walker&apos;s mentum assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyLabel"/>
+        <rdfs:label>Walker&apos;s mentum assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumMorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore"/>
+        <rdfs:label>Numeric value of Walker&apos;s mentum assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumMorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyScalarTransform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyScalarTransform"/>
+        <rdfs:label>Walker&apos;s mentum assigned morphology scalar transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumMorphologyValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Walker&apos;s mentum assigned morphology value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/Morphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/Morphology">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <rdfs:label>Score of Walker&apos;s sex assessment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MorphologyLabel">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
+        <rdfs:label>Walker&apos;s assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
+        <rdfs:label>Numeric value of Walker&apos;s assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MorphologyScalarTransform">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:label>Scalar transformation of Walker&apos;s sex assessment score</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MorphologyValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MorphologyValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
+        <rdfs:label>Walker&apos;s assigned morphology value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/ClassificationProcess"/>
+        <rdfs:label>Walker&apos;s nuchal crest morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphology">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/Morphology"/>
+        <rdfs:label>Walker&apos;s nuchal crest assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyLabel"/>
+        <rdfs:label>Walker&apos;s nuchal crest assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore"/>
+        <rdfs:label>Numeric value of Walker&apos;s nuchal crest assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyScalarTransform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyScalarTransform"/>
+        <rdfs:label>Walker&apos;s nuchal crest assigned morphology scalar transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Walker&apos;s nuchal crest assigned morphology value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginClassificationProcess -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginClassificationProcess">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/ClassificationProcess"/>
+        <rdfs:label>Walker&apos;s supraorbital margin morphological classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphology -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphology">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/Morphology"/>
+        <rdfs:label>Walker&apos;s supraorbital margin assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyLabel -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyLabel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyLabel"/>
+        <rdfs:label>Walker&apos;s supraorbital margin assigned morphology label</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyNumericScore -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyNumericScore">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore"/>
+        <rdfs:label>Numeric value of Walker&apos;s supraorbital margin assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyScalarTransform -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyScalarTransform">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyScalarTransform"/>
+        <rdfs:label>Walker&apos;s supraorbital margin assigned morphology scalar transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyValueSpecification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000999"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyLabel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Walker&apos;s supraorbital margin assigned morphology value specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable -->
+
+    <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyLabel"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaScore1">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaScore2">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaScore3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaScore3">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaScore4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaScore4">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaScore5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaScore5">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessScore1">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessScore2">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessScore3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessScore3">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessScore4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessScore4">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessScore5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessScore5">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MentumScore1">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MentumScore2">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumScore3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MentumScore3">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumScore4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MentumScore4">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumScore5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/MentumScore5">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestScore1">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestScore2">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestScore3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestScore3">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestScore4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestScore4">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestScore5 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestScore5">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginScore1 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginScore1">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginScore2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginScore2">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginScore3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginScore3">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginScore4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginScore4">
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyLabel"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaClassificationProcess"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessClassificationProcess"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MentumClassificationProcess"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestClassificationProcess"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginClassificationProcess"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphology"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphology"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphology"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphology"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphology"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyLabel"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyLabel"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyLabel"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyLabel"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyLabel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyNumericScore"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyNumericScore"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyNumericScore"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyNumericScore"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyNumericScore"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyScalarTransform"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyScalarTransform"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyScalarTransform"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyScalarTransform"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyScalarTransform"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
