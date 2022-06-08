@@ -81,6 +81,14 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyNumericScoreValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyNumericScoreValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScoreValueSpecification"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyScalarTransform -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyScalarTransform">
@@ -137,6 +145,14 @@
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyNumericScore">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore"/>
         <rdfs:label>Numeric value of Walker&apos;s mastoid process assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyNumericScoreValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyNumericScoreValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScoreValueSpecification"/>
     </owl:Class>
     
 
@@ -201,6 +217,14 @@
     
 
 
+    <!-- http://w3id.org/rdfbones/ext/walker/MentumMorphologyNumericScoreValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyNumericScoreValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScoreValueSpecification"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/rdfbones/ext/walker/MentumMorphologyScalarTransform -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyScalarTransform">
@@ -248,6 +272,14 @@
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
         <rdfs:label>Numeric value of Walker&apos;s assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/MorphologyNumericScoreValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScoreValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
     </owl:Class>
     
 
@@ -302,6 +334,14 @@
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyNumericScore">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore"/>
         <rdfs:label>Numeric value of Walker&apos;s nuchal crest assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyNumericScoreValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyNumericScoreValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScoreValueSpecification"/>
     </owl:Class>
     
 
@@ -362,6 +402,14 @@
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyNumericScore">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScore"/>
         <rdfs:label>Numeric value of Walker&apos;s supraorbital margin assigned morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyNumericScoreValueSpecification -->
+
+    <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyNumericScoreValueSpecification">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker/MorphologyNumericScoreValueSpecification"/>
     </owl:Class>
     
 
@@ -676,6 +724,16 @@
             <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyNumericScore"/>
             <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyNumericScore"/>
             <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyNumericScore"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/GlabellaMorphologyNumericScoreValueSpecification"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MastoidProcessMorphologyNumericScoreValueSpecification"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/MentumMorphologyNumericScoreValueSpecification"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/NuchalCrestMorphologyNumericScoreValueSpecification"/>
+            <rdf:Description rdf:about="http://w3id.org/rdfbones/ext/walker/SupraorbitalMarginMorphologyNumericScoreValueSpecification"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
