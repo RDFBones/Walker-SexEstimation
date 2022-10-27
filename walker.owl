@@ -15,12 +15,9 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:resource="http://semanticscience.org/resource/">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/ext/walker">
-        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/standards-si"/>
-        <owl:imports rdf:resource="http://w3id.org/rdfbones/ext/phaleron-si/phaleron-si.owl"/>
-        <owl:imports rdf:resource="http://w3id.org/rdfbones/ontology_resources/core/v0-2/rdfbones.owl"/>
         <terms:creator>Lukas Bender</terms:creator>
-        <terms:title>Walker&apos;s Sex Estimation ontology</terms:title>
-        <rdfs:label>Walker&apos;s Sex Estimation ontology</rdfs:label>
+        <terms:title>Walker&apos;s sex estimation ontology</terms:title>
+        <rdfs:label>Walker&apos;s sex estimation ontology</rdfs:label>
     </owl:Ontology>
     
 
