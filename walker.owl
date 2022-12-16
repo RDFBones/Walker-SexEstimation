@@ -15,14 +15,15 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:resource="http://semanticscience.org/resource/">
     <owl:Ontology rdf:about="http://w3id.org/rdfbones/ext/walker-se">
+        <obo:IAO_0000115>This RDFBones ontology extension implements the sex estimation routines as described in the publication &quot;Sexing Skulls Using Discriminant Function Analysis of Visually Assessed Traits&quot; by Phillip L. Walker (2008).</obo:IAO_0000115>
         <terms:creator>Lukas Bender</terms:creator>
         <terms:title>Walker&apos;s sex estimation ontology</terms:title>
         <rdfs:label>Walker&apos;s sex estimation ontology</rdfs:label>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -30,7 +31,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
@@ -38,22 +39,22 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>definition</rdfs:label>
     </owl:AnnotationProperty>
-
+    
 
 
     <!-- http://purl.org/dc/terms/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
-
+    
 
 
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -61,16 +62,22 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000999 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000999"/>
+    
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0001938 -->
 
-    <!--
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001938"/>
+    
+
+
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -78,31 +85,31 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000070 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000938 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000938"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000963 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000963"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001930 -->
@@ -110,19 +117,19 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001930">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
     </owl:Class>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0001933 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001933"/>
-
+    
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000"/>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification -->
@@ -130,7 +137,7 @@
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/ClassificationProcess -->
@@ -140,7 +147,7 @@
         <obo:IAO_0000115>Assay in which the sample specimen is assigned to one of 5 pre-defined categories based on morphology.</obo:IAO_0000115>
         <rdfs:label>Walker&apos;s morphological classification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/ConvertedSex -->
@@ -150,7 +157,7 @@
         <obo:IAO_0000115>Denotes whether a morphology combination tends towards either male or female.</obo:IAO_0000115>
         <rdfs:label>Walker&apos;s score converted to sex</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/ConvertedSexLabel -->
@@ -159,7 +166,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
         <rdfs:label>Walker&apos;s score converted to sex label</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/ConvertedSexValueSpecification -->
@@ -168,7 +175,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification"/>
         <rdfs:label>Walker&apos;s score converted to sex value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Gl-Ma-MeLRE -->
@@ -177,7 +184,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LogisticRegressionEquation"/>
         <rdfs:label>Walker&apos;s glabella-mastoid process-mentum logistic regression equation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Gl-Ma-MeLREScore -->
@@ -192,7 +199,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s glabella-mastoid-mentum logistic regression equation score</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Gl-Ma-MeLREScoreValueSpecification -->
@@ -201,7 +208,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LREScoreValueSpecification"/>
         <rdfs:label>Walker&apos;s glabella-mastoid process-mentum logistic regression equation score value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Gl-MaLRE -->
@@ -210,7 +217,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LogisticRegressionEquation"/>
         <rdfs:label>Walker&apos;s glabella-mastoid process logistic regression equation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Gl-MaLREScore -->
@@ -225,7 +232,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s glabella-mastoid logistic regression equation score</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Gl-MaLREScoreValueSpecification -->
@@ -234,7 +241,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LREScoreValueSpecification"/>
         <rdfs:label>Walker&apos;s glabella-mastoid process logistic regression equation score value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Gl-MeLRE -->
@@ -243,7 +250,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LogisticRegressionEquation"/>
         <rdfs:label>Walker&apos;s glabella-mentum logistic regression equation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Gl-MeLREScore -->
@@ -258,7 +265,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s glabella-mentum logistic regression equation score</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Gl-MeLREScoreValueSpecification -->
@@ -267,7 +274,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LREScoreValueSpecification"/>
         <rdfs:label>Walker&apos;s glabella-mentum logistic regression equation score value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaClassificationProcess -->
@@ -276,7 +283,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/ClassificationProcess"/>
         <rdfs:label>Walker&apos;s glabella morphological classification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphology -->
@@ -291,7 +298,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s glabella assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyLabel -->
@@ -300,7 +307,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyLabel"/>
         <rdfs:label>Walker&apos;s glabella assigned morphology label</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyNumericScore -->
@@ -315,7 +322,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Numeric value of Walker&apos;s glabella assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyNumericScoreValueSpecification -->
@@ -324,7 +331,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericScoreValueSpecification"/>
         <rdfs:label>Numeric value of Walker&apos;s glabella assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyNumericTransform -->
@@ -333,7 +340,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericTransform"/>
         <rdfs:label>Walker&apos;s glabella assigned morphology numeric transformation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyValueSpecification -->
@@ -348,15 +355,16 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s glabella assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/LREScoreValueSpecification -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker-se/LREScoreValueSpecification">
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification"/>
+        <rdfs:label>Walker&apos;s logistic regression equation score value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/LogisticRegressionEquation -->
@@ -366,7 +374,7 @@
         <obo:IAO_0000115>A data transformation that converts the numeric value of two or more distinct Walker&apos;s skull-based regions of interest into a score.</obo:IAO_0000115>
         <rdfs:label>Walker&apos;s logistic regression equation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/LogisticRegressionEquationScore -->
@@ -376,7 +384,7 @@
         <obo:IAO_0000115>A data item giving the result of a Walker&apos;s logistic regression equation.</obo:IAO_0000115>
         <rdfs:label>Score of Walker&apos;s logistic regression equation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/LogisticRegressionEquationScoreConversion -->
@@ -386,7 +394,7 @@
         <obo:IAO_0000115>A data transformation that converts the result of a logistic regression equation into either male or female sex.</obo:IAO_0000115>
         <rdfs:label>Conversion of Walker&apos;s logistic regression equation score to sex</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessClassificationProcess -->
@@ -395,7 +403,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/ClassificationProcess"/>
         <rdfs:label>Walker&apos;s mastoid process morphological classification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphology -->
@@ -410,7 +418,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s mastoid process assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyLabel -->
@@ -419,7 +427,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyLabel"/>
         <rdfs:label>Walker&apos;s mastoid process assigned morphology label</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyNumericScore -->
@@ -434,7 +442,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Numeric value of Walker&apos;s mastoid process assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyNumericScoreValueSpecification -->
@@ -443,7 +451,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericScoreValueSpecification"/>
         <rdfs:label>Numeric value of Walker&apos;s mastoid process assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyNumericTransform -->
@@ -452,7 +460,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericTransform"/>
         <rdfs:label>Walker&apos;s mastoid process assigned morphology numeric transformation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyValueSpecification -->
@@ -467,7 +475,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s mastoid process assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Me-MaLRE -->
@@ -476,7 +484,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LogisticRegressionEquation"/>
         <rdfs:label>Walker&apos;s mentum-mastoid process logistic regression equation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Me-MaLREScore -->
@@ -491,7 +499,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s mentum-mastoid logistic regression equation score</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Me-MaLREScoreValueSpecification -->
@@ -500,7 +508,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LREScoreValueSpecification"/>
         <rdfs:label>Walker&apos;s mentum-mastoid process logistic regression equation score value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumClassificationProcess -->
@@ -509,7 +517,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/ClassificationProcess"/>
         <rdfs:label>Walker&apos;s mentum morphological classification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumMorphology -->
@@ -524,7 +532,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s mentum assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyLabel -->
@@ -533,7 +541,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyLabel"/>
         <rdfs:label>Walker&apos;s mentum assigned morphology label</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyNumericScore -->
@@ -548,7 +556,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Numeric value of Walker&apos;s mentum assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyNumericScoreValueSpecification -->
@@ -557,7 +565,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericScoreValueSpecification"/>
         <rdfs:label>Numeric value of Walker&apos;s mentum assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyNumericTransform -->
@@ -566,7 +574,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericTransform"/>
         <rdfs:label>Walker&apos;s mentum assigned morphology numeric transformation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyValueSpecification -->
@@ -581,17 +589,17 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s mentum assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Morphology -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker-se/Morphology">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000938"/>
-        <obo:IAO_0000115>Categories to which a sample specimen can be assigned via the Walker&apos;s morphological classification assay.</obo:IAO_0000115>
-        <rdfs:label>Score of Walker&apos;s sex assessment</rdfs:label>
+        <obo:IAO_0000115>A morphology type that has been assigned to an anatomical region of interest of a specimen via Walker&apos;s classification assay.</obo:IAO_0000115>
+        <rdfs:label>Walker&apos;s assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MorphologyLabel -->
@@ -600,7 +608,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000963"/>
         <rdfs:label>Walker&apos;s assigned morphology label</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericScore -->
@@ -610,7 +618,7 @@
         <obo:IAO_0000115>A numeric data item giving the numeric value attributed to a Walker&apos;s morphology type.</obo:IAO_0000115>
         <rdfs:label>Numeric value of Walker&apos;s assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericScoreValueSpecification -->
@@ -619,17 +627,23 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification"/>
         <rdfs:label>Numeric value of Walker&apos;s assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericTransform -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericTransform">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000115>A data transformation that converts a Walker&apos;s skull-based morphology type into a specific integer value.</obo:IAO_0000115>
-        <rdfs:label>Numeric transformation of Walker&apos;s sex assessment score</rdfs:label>
+        <obo:IAO_0000115>Assigns each morphology type a corresponding numeric value. The values are as follows:
+Morphology type 1 = 1
+Morphology type 2 = 2
+Morphology type 3 = 3
+Morphology type 4 = 4
+Morphology type 5 = 5
+Unobservable = no value</obo:IAO_0000115>
+        <rdfs:label>Numeric transformation of Walker&apos;s assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MorphologyValueSpecification -->
@@ -638,7 +652,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001930"/>
         <rdfs:label>Walker&apos;s assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Nu-MaLRE -->
@@ -647,7 +661,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LogisticRegressionEquation"/>
         <rdfs:label>Walker&apos;s nuchal crest-mastoid process logistic regression equation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Nu-MaLREScore -->
@@ -662,7 +676,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s nuchal crest-mastoid logistic regression equation score</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Nu-MaLREScoreValueSpecification -->
@@ -671,7 +685,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LREScoreValueSpecification"/>
         <rdfs:label>Walker&apos;s nuchal crest-mastoid process logistic regression equation score value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestClassificationProcess -->
@@ -680,7 +694,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/ClassificationProcess"/>
         <rdfs:label>Walker&apos;s nuchal crest morphological classification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphology -->
@@ -695,7 +709,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s nuchal crest assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyLabel -->
@@ -704,7 +718,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyLabel"/>
         <rdfs:label>Walker&apos;s nuchal crest assigned morphology label</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyNumericScore -->
@@ -719,7 +733,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Numeric value of Walker&apos;s nuchal crest assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyNumericScoreValueSpecification -->
@@ -728,7 +742,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericScoreValueSpecification"/>
         <rdfs:label>Numeric value of Walker&apos;s nuchal crest assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyNumericTransform -->
@@ -737,7 +751,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericTransform"/>
         <rdfs:label>Walker&apos;s nuchal crest assigned morphology numeric transformation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyValueSpecification -->
@@ -752,7 +766,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s nuchal crest assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Or-MeLRE -->
@@ -761,7 +775,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LogisticRegressionEquation"/>
         <rdfs:label>Walker&apos;s supraorbital margin-mentum logistic regression equation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Or-MeLREScore -->
@@ -776,7 +790,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s supraorbital margin-mentum logistic regression equation score</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Or-MeLREScoreValueSpecification -->
@@ -785,18 +799,17 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/LREScoreValueSpecification"/>
         <rdfs:label>Walker&apos;s supraorbital margin-mentum logistic regression equation score value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/ProbabilityTransformation -->
 
     <owl:Class rdf:about="http://w3id.org/rdfbones/ext/walker-se/ProbabilityTransformation">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000115>A data transformation that converts a Walker&apos;s logistic regression equation score into the probability of being male or female.</obo:IAO_0000115>
-        <rdfs:comment>Probability of being male = 1/(1+e^x) where x = linear regression equation score. Probability of being female = 1-(1/1+e^x))</rdfs:comment>
+        <obo:IAO_0000115>A data transformation that converts a Walker&apos;s logistic regression equation score into the probability of being male or female. The probability of being male is 1/(1+e^x) where x = linear regression equation score. The probability of being female is 1-(1/1+e^x))</obo:IAO_0000115>
         <rdfs:label>Walker&apos;s score to sex probability transformation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SexProbabilityValueSpecification -->
@@ -805,7 +818,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/phaleron-di/NumberValueSpecification"/>
         <rdfs:label>Walker&apos;s sex probability value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginClassificationProcess -->
@@ -814,7 +827,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/ClassificationProcess"/>
         <rdfs:label>Walker&apos;s supraorbital margin morphological classification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphology -->
@@ -829,7 +842,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s supraorbital margin assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyLabel -->
@@ -838,7 +851,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyLabel"/>
         <rdfs:label>Walker&apos;s supraorbital margin assigned morphology label</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyNumericScore -->
@@ -853,7 +866,7 @@
         </rdfs:subClassOf>
         <rdfs:label>Numeric value of Walker&apos;s supraorbital margin assigned morphology</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyNumericScoreValueSpecification -->
@@ -862,7 +875,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericScoreValueSpecification"/>
         <rdfs:label>Numeric value of Walker&apos;s supraorbital margin assigned morphology value specification</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyNumericTransform -->
@@ -871,7 +884,7 @@
         <rdfs:subClassOf rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MorphologyNumericTransform"/>
         <rdfs:label>Walker&apos;s supraorbital margin assigned morphology numeric transformation</rdfs:label>
     </owl:Class>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyValueSpecification -->
@@ -886,10 +899,10 @@
         </rdfs:subClassOf>
         <rdfs:label>Walker&apos;s supraorbital margin assigned morphology value specification</rdfs:label>
     </owl:Class>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -897,7 +910,7 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/phaleron-si/9-Unobservable -->
@@ -909,16 +922,17 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyLabel"/>
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyLabel"/>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Female -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker-se/Female">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/ConvertedSexLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/ProbabilityTransformation"/>
         <rdfs:label>Female</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaType1 -->
@@ -927,7 +941,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glabella morphology type 1</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaType2 -->
@@ -936,7 +950,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glabella morphology type 2</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaType3 -->
@@ -945,7 +959,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glabella morphology type 3</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaType4 -->
@@ -954,7 +968,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glabella morphology type 4</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/GlabellaType5 -->
@@ -963,16 +977,17 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/GlabellaMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glabella morphology type 5</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/Male -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/rdfbones/ext/walker-se/Male">
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/ConvertedSexLabel"/>
+        <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/ProbabilityTransformation"/>
         <rdfs:label>Male</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessType1 -->
@@ -981,7 +996,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mastoid process morphology type 1</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessType2 -->
@@ -990,7 +1005,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mastoid process morphology type 2</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessType3 -->
@@ -999,7 +1014,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mastoid process morphology type 3</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessType4 -->
@@ -1008,7 +1023,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mastoid process morphology type 4</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MastoidProcessType5 -->
@@ -1017,7 +1032,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MastoidProcessMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mastoid process morphology type 5</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumType1 -->
@@ -1026,7 +1041,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mentum morphology type 1</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumType2 -->
@@ -1035,7 +1050,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mentum morphology type 2</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumType3 -->
@@ -1044,7 +1059,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mentum morphology type 3</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumType4 -->
@@ -1053,7 +1068,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mentum morphology type 4</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/MentumType5 -->
@@ -1062,7 +1077,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/MentumMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mentum morphology type 5</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestType1 -->
@@ -1071,7 +1086,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuchal crest morphology type 1</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestType2 -->
@@ -1080,7 +1095,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuchal crest morphology type 2</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestType3 -->
@@ -1089,7 +1104,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuchal crest morphology type 3</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestType4 -->
@@ -1098,7 +1113,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuchal crest morphology type 4</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/NuchalCrestType5 -->
@@ -1107,7 +1122,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/NuchalCrestMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nuchal crest morphology type 5</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginType1 -->
@@ -1116,7 +1131,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supraorbital margin morphology type 1</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginType2 -->
@@ -1125,7 +1140,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supraorbital margin morphology type 2</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginType3 -->
@@ -1134,7 +1149,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supraorbital margin morphology type 3</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginType4 -->
@@ -1143,7 +1158,7 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supraorbital margin morphology type 4</rdfs:label>
     </owl:NamedIndividual>
-
+    
 
 
     <!-- http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginType5 -->
@@ -1152,10 +1167,10 @@
         <rdf:type rdf:resource="http://w3id.org/rdfbones/ext/walker-se/SupraorbitalMarginMorphologyLabel"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supraorbital margin morphology type 5</rdfs:label>
     </owl:NamedIndividual>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // General axioms
@@ -1250,3 +1265,4 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
